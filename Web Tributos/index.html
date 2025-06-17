@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Tributos - República Argentina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Taller de Tributos <span class="group-info">- Grupo 3 IES Lola Mora</span></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#presentacion" class="nav-link">Presentación</a></li>
+                    <li><a href="#calculadora" class="nav-link">Calculadora</a></li>
+                    <li><a href="#nacionales" class="nav-link">Tributos Nacionales</a></li>
+                    <li><a href="#provinciales" class="nav-link">Tributos Provinciales</a></li>
+                    <li><a href="#municipales" class="nav-link">Tributos Municipales</a></li>
+                    <li><a href="#equipo" class="nav-link">Nuestro Equipo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Educativo -->
+    <section class="educational-banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-left">
+                    <h3>🎓 Proyecto Educativo</h3>
+                    <p><strong>Web creada con fines educativos por el Grupo 3</strong></p>
+                    <p>Tema: <strong>TRIBUTOS</strong></p>
+                    <p>Estudiantes del I.E.S Lola Mora - San Miguel de Tucumán:</p>
+                    <p><strong>Materia:</strong> Economía - <strong>Modalidad:</strong> Taller de Tributos</p>
+                    <ul class="student-list">
+                        <li>Banegas, Samira</li>
+                        <li>Ibarra, Thiago Joel</li>
+                        <li>Periotti, Luis Javier</li>
+                        <li>Sosa, Iris Natalia</li>
+                        <li>Valdez Quevedo, María Belén</li>
+                    </ul>
+                </div>
+                <div class="banner-right">
+                    <div class="rotating-info">
+                        <h3>📊 Información Tributaria</h3>
+                        <div id="rotating-content" class="info-content">
+                            <!-- Content will be rotated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Sección Presentación -->
+        <section id="presentacion" class="section">
+            <div class="container">
+                <h2 class="section-title">Presentación del Proyecto</h2>
+                <div class="presentacion-content">
+                    <div class="presentacion-intro">
+                        <h3>Bienvenidos al Portal de Tributos Argentinos</h3>
+                        <p>Este proyecto educativo ha sido desarrollado por estudiantes de <strong>Economía</strong> del <strong>I.E.S Lola Mora</strong> de San Miguel de Tucumán, como parte de la modalidad <strong>Taller de Tributos</strong>.</p>
+                    </div>
+                    
+                    <div class="presentacion-grid">
+                        <div class="presentacion-card">
+                            <h4>🎯 Objetivos del Taller</h4>
+                            <ul class="objetivos-list">
+                                <li>Comprender el concepto de tributo y su función en el sistema económico</li>
+                                <li>Diferenciar los tipos de tributos: impuestos, tasas y contribuciones especiales</li>
+                                <li>Identificar las competencias tributarias del Estado Nacional, las Provincias y los Municipios en Argentina</li>
+                                <li>Analizar el impacto de la presión tributaria sobre los distintos sectores sociales y económicos</li>
+                                <li>Promover una mirada crítica y reflexiva sobre el uso y la distribución de los recursos públicos generados por los tributos</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="presentacion-card">
+                            <h4>📚 Contenido Educativo</h4>
+                            <div class="contenido-sections">
+                                <div class="contenido-section">
+                                    <h5>Conceptualización de tributo</h5>
+                                    <ul>
+                                        <li>Definición general</li>
+                                        <li>Clasificación: impuestos, tasas y contribuciones</li>
+                                    </ul>
+                                </div>
+                                <div class="contenido-section">
+                                    <h5>Marco legal y jurisdiccional</h5>
+                                    <ul>
+                                        <li>Competencias según Constitución Nacional</li>
+                                        <li>Tributos nacionales (IVA, Ganancias, etc.)</li>
+                                        <li>Tributos provinciales (Ingresos Brutos, Sellos)</li>
+                                        <li>Tributos municipales (Tasa de ABL, Derechos de uso de espacio público)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="presentacion-card">
+                            <h4>🏛️ Rol económico y social de los tributos</h4>
+                            <ul class="rol-list">
+                                <li>Financiamiento del gasto público</li>
+                                <li>Redistribución del ingreso</li>
+                                <li>Incentivos y desincentivos económicos</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="presentacion-card">
+                            <h4>🔍 Análisis crítico</h4>
+                            <ul class="analisis-list">
+                                <li>Inequidades del sistema tributario argentino</li>
+                                <li>Evasión fiscal y su impacto</li>
+                                <li>Propuestas de mejora desde una perspectiva ciudadana y técnica</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="presentacion-footer">
+                        <div class="institucion-info">
+                            <h4>Información Institucional</h4>
+                            <div class="info-details">
+                                <p><strong>Institución:</strong> I.E.S Lola Mora</p>
+                                <p><strong>Carrera:</strong> Economía</p>
+                                <p><strong>Modalidad:</strong> Taller de Tributos</p>
+                                <p><strong>Año:</strong> 2025</p>
+                                <p><strong>Ubicación:</strong> San Miguel de Tucumán, Argentina</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Inicio -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Sistema Integral de Información Tributaria</h2>
+                    <p>Acceda a información actualizada sobre tributos nacionales, provinciales y municipales de la República Argentina, con especial énfasis en la Provincia de Tucumán.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('calculadora')">Calcular Tributos</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('provinciales')">Consultar Provincias</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculadora de Tributos -->
+        <section id="calculadora" class="section">
+            <div class="container">
+                <h2 class="section-title">Calculadora de Tributos</h2>
+                <div class="calculator-container">
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label for="tipoTributo">Tipo de Tributo:</label>
+                            <select id="tipoTributo" class="form-control">
+                                <option value="">Seleccione un tributo</option>
+                                <!-- Tributos Nacionales -->
+                                <optgroup label="TRIBUTOS NACIONALES">
+                                    <option value="ganancias">Impuesto a las Ganancias</option>
+                                    <option value="iva">IVA</option>
+                                    <option value="bienes-personales">Bienes Personales</option>
+                                    <option value="debitos-creditos">Débitos y Créditos Bancarios</option>
+                                    <option value="ganancia-minima">Ganancia Mínima Presunta</option>
+                                    <option value="combustibles">Combustibles Líquidos</option>
+                                    <option value="importacion">Derechos de Importación</option>
+                                    <option value="monotributo">Monotributo</option>
+                                    <option value="exportacion">Derechos de Exportación</option>
+                                    <option value="internos">Impuestos Internos</option>
+                                    <option value="transf-financieras">Transacciones Financieras</option>
+                                    <option value="cheques">Impuesto al Cheque</option>
+                                    <option value="ganancias-sociedades">Ganancias Sociedades</option>
+                                    <option value="dividendos">Dividendos</option>
+                                    <option value="intereses">Intereses</option>
+                                </optgroup>
+                                
+                                <!-- Tributos Provinciales -->
+                                <optgroup label="TRIBUTOS PROVINCIALES">
+                                    <option value="ingresos-brutos">Ingresos Brutos</option>
+                                    <option value="inmobiliario">Impuesto Inmobiliario</option>
+                                    <option value="automotor">Impuesto Automotor</option>
+                                    <option value="sellos">Impuesto de Sellos</option>
+                                    <option value="embarcaciones">Embarcaciones de Recreo</option>
+                                    <option value="loteria">Juegos de Azar y Apuestas</option>
+                                    <option value="energia-electrica">Energía Eléctrica</option>
+                                    <option value="gas-natural">Gas Natural</option>
+                                    <option value="actividades-hipicas">Actividades Hípicas</option>
+                                    <option value="aeronaves">Aeronaves</option>
+                                    <option value="extraccion-petroleo">Extracción de Petróleo</option>
+                                    <option value="mineria">Actividad Minera</option>
+                                    <option value="pesca">Actividad Pesquera</option>
+                                    <option value="forestal">Actividad Forestal</option>
+                                    <option value="turismo">Actividad Turística</option>
+                                    <option value="publicidad">Publicidad y Propaganda</option>
+                                    <option value="espectaculos">Espectáculos Públicos</option>
+                                    <option value="rifas-sorteos">Rifas y Sorteos</option>
+                                    <option value="casinos">Casinos y Bingos</option>
+                                    <option value="telefonia">Telefonía Móvil</option>
+                                </optgroup>
+                                
+                                <!-- Tributos Municipales -->
+                                <optgroup label="TRIBUTOS MUNICIPALES">
+                                    <option value="seguridad-higiene">Seguridad e Higiene</option>
+                                    <option value="servicios-urbanos">Servicios Urbanos</option>
+                                    <option value="registro-inspeccion">Registro e Inspección</option>
+                                    <option value="construccion">Derechos de Construcción</option>
+                                    <option value="ocupacion-espacios">Ocupación de Espacios Públicos</option>
+                                    <option value="habilitacion-comercial">Habilitación Comercial</option>
+                                    <option value="alumbrado-publico">Alumbrado Público</option>
+                                    <option value="barrido-limpieza">Barrido y Limpieza</option>
+                                    <option value="cementerio">Servicios de Cementerio</option>
+                                    <option value="mercados">Ferias y Mercados</option>
+                                    <option value="transito">Infracciones de Tránsito</option>
+                                    <option value="rodados">Patente de Rodados</option>
+                                    <option value="obras-publicas">Contribución por Mejoras</option>
+                                    <option value="plusvalia">Contribución por Plusvalía</option>
+                                    <option value="desarrollo-urbano">Desarrollo Urbano</option>
+                                    <option value="proteccion-ambiental">Protección Ambiental</option>
+                                    <option value="bomberos">Servicios de Bomberos</option>
+                                    <option value="desagues-cloacas">Desagües y Cloacas</option>
+                                    <option value="agua-corriente">Agua Corriente</option>
+                                    <option value="recoleccion-residuos">Recolección de Residuos</option>
+                                </optgroup>
+                                
+                                <!-- Contribuciones Especiales -->
+                                <optgroup label="CONTRIBUCIONES ESPECIALES">
+                                    <option value="aportes-jubilatorios">Aportes Jubilatorios</option>
+                                    <option value="obra-social">Obra Social</option>
+                                    <option value="desempleo">Seguro de Desempleo</option>
+                                    <option value="asignaciones-familiares">Asignaciones Familiares</option>
+                                    <option value="art">ART</option>
+                                    <option value="capacitacion">Capacitación y Empleo</option>
+                                    <option value="vivienda">Fondo Nacional de Vivienda</option>
+                                    <option value="monotributo-social">Monotributo Social</option>
+                                    <option value="cooperativas">Cooperativas de Trabajo</option>
+                                    <option value="pymes">Contribución PYMES</option>
+                                    <option value="innovacion">Innovación Tecnológica</option>
+                                    <option value="exportadores">Reintegro Exportadores</option>
+                                    <option value="desarrollo-regional">Desarrollo Regional</option>
+                                    <option value="sustentabilidad">Sustentabilidad Ambiental</option>
+                                    <option value="cultura">Promoción Cultural</option>
+                                    <option value="deportes">Promoción Deportiva</option>
+                                    <option value="educacion">Contribución Educativa</option>
+                                    <option value="salud-publica">Salud Pública</option>
+                                    <option value="seguridad-ciudadana">Seguridad Ciudadana</option>
+                                    <option value="infraestructura">Infraestructura Vial</option>
+                                </optgroup>
+                                
+                                <!-- Tasas Especiales -->
+                                <optgroup label="TASAS ESPECIALES">
+                                    <option value="migraciones">Migraciones</option>
+                                    <option value="pasaportes">Pasaportes</option>
+                                    <option value="registro-civil">Registro Civil</option>
+                                    <option value="policia">Certificados Policiales</option>
+                                    <option value="bomberos-cert">Certificados de Bomberos</option>
+                                    <option value="bromatologia">Bromatología</option>
+                                    <option value="veterinaria">Servicios Veterinarios</option>
+                                    <option value="farmacia">Habilitación Farmacéutica</option>
+                                    <option value="laboratorio">Laboratorios Clínicos</option>
+                                    <option value="consultorio">Consultorios Médicos</option>
+                                    <option value="clinicas">Clínicas y Sanatorios</option>
+                                    <option value="educacion-privada">Educación Privada</option>
+                                    <option value="transporte-escolar">Transporte Escolar</option>
+                                    <option value="guarderias">Guarderías</option>
+                                    <option value="gimnasios">Gimnasios</option>
+                                    <option value="piletas">Piletas de Natación</option>
+                                    <option value="clubes">Clubes Deportivos</option>
+                                    <option value="canchas-futbol">Canchas de Fútbol</option>
+                                    <option value="discotecas">Discotecas</option>
+                                    <option value="bares">Bares y Confiterías</option>
+                                    <option value="restaurantes">Restaurantes</option>
+                                    <option value="hoteles">Hoteles</option>
+                                    <option value="hostales">Hostales</option>
+                                    <option value="cabañas">Cabañas Turísticas</option>
+                                    <option value="agencias-viaje">Agencias de Viaje</option>
+                                    <option value="rent-car">Rent a Car</option>
+                                    <option value="estacionamiento">Estacionamientos</option>
+                                    <option value="lavaderos">Lavaderos de Autos</option>
+                                    <option value="talleres">Talleres Mecánicos</option>
+                                    <option value="gomerias">Gomerías</option>
+                                    <option value="estaciones-servicio">Estaciones de Servicio</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="monto">Monto Base ($):</label>
+                            <input type="number" id="monto" class="form-control" placeholder="Ingrese el monto">
+                        </div>
+                        <div class="form-group">
+                            <label for="provincia">Provincia:</label>
+                            <select id="provincia" class="form-control">
+                                <option value="">Seleccione una provincia</option>
+                                <option value="buenos-aires">Buenos Aires</option>
+                                <option value="catamarca">Catamarca</option>
+                                <option value="chaco">Chaco</option>
+                                <option value="chubut">Chubut</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="corrientes">Corrientes</option>
+                                <option value="entre-rios">Entre Ríos</option>
+                                <option value="formosa">Formosa</option>
+                                <option value="jujuy">Jujuy</option>
+                                <option value="la-pampa">La Pampa</option>
+                                <option value="la-rioja">La Rioja</option>
+                                <option value="mendoza">Mendoza</option>
+                                <option value="misiones">Misiones</option>
+                                <option value="neuquen">Neuquén</option>
+                                <option value="rio-negro">Río Negro</option>
+                                <option value="salta">Salta</option>
+                                <option value="san-juan">San Juan</option>
+                                <option value="san-luis">San Luis</option>
+                                <option value="santa-cruz">Santa Cruz</option>
+                                <option value="santa-fe">Santa Fe</option>
+                                <option value="santiago-del-estero">Santiago del Estero</option>
+                                <option value="tierra-del-fuego">Tierra del Fuego</option>
+                                <option value="tucuman">Tucumán</option>
+                                <option value="caba">Ciudad Autónoma de Buenos Aires</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary btn-calculate" onclick="calcularTributo()">Calcular</button>
+                    </div>
+                    <div class="calculator-result">
+                        <h3>Resultado del Cálculo</h3>
+                        <div id="resultado" class="result-display">
+                            <p>Complete los campos para calcular el tributo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tributos Nacionales -->
+        <section id="nacionales" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Tributos Nacionales</h2>
+                <div class="tributos-grid">
+                    <div class="tributo-card">
+                        <h3 class="tributo-clickable" onclick="openTributoModal('ganancias')">Impuesto a las Ganancias</h3>
+                        <p>Gravamen que recae sobre las ganancias obtenidas por personas físicas y jurídicas.</p>
+                        <ul>
+                            <li>Personas Físicas: Escala progresiva</li>
+                            <li>Sociedades: 30% sobre utilidades</li>
+                            <li>No residentes: 35%</li>
+                        </ul>
+                    </div>
+                    <div class="tributo-card">
+                        <h3 class="tributo-clickable" onclick="openTributoModal('iva')">Impuesto al Valor Agregado (IVA)</h3>
+                        <p>Tributo que grava las ventas de bienes y servicios en territorio argentino.</p>
+                        <ul>
+                            <li>Alícuota General: 21%</li>
+                            <li>Alícuota Reducida: 10.5%</li>
+                            <li>Exentos y No Gravados</li>
+                        </ul>
+                    </div>
+                    <div class="tributo-card">
+                        <h3 class="tributo-clickable" onclick="openTributoModal('bienes-personales')">Impuesto a los Bienes Personales</h3>
+                        <p>Gravamen sobre el patrimonio de personas físicas y sucesiones indivisas.</p>
+                        <ul>
+                            <li>Mínimo no imponible: $6.000.000</li>
+                            <li>Alícuotas: 0.5% al 1.25%</li>
+                            <li>Bienes en el país y exterior</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="ver-mas-container">
+                    <button class="btn btn-secondary ver-mas-btn" onclick="openModal('nacionales')">
+                        <span>Ver Más Tributos Nacionales</span>
+                        <span class="arrow">📋</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tributos Provinciales -->
+        <section id="provinciales" class="section">
+            <div class="container">
+                <h2 class="section-title">Tributos Provinciales - Tucumán</h2>
+                <div class="tributos-grid">
+                    <div class="tributo-card">
+                        <h3 class="tributo-clickable" onclick="openTributoModal('ingresos-brutos')">Impuesto sobre los Ingresos Brutos</h3>
+                        <p>Tributo que grava el ejercicio habitual de actividades económicas.</p>
+                        <ul>
+                            <li>Comercio: 3% - 5%</li>
+                            <li>Industria: 1% - 3%</li>
+                            <li>Servicios: 3% - 7%</li>
+                        </ul>
+                    </div>
+                    <div class="tributo-card">
+                        <h3 class="tributo-clickable" onclick="openTributoModal('inmobiliario')">Impuesto Inmobiliario</h3>
+                        <p>Gravamen sobre la propiedad de bienes inmuebles urbanos y rurales.</p>
+                        <ul>
+                            <li>Urbanos: 0.5% - 1.5%</li>
+                            <li>Rurales: 0.3% - 1%</li>
+                            <li>Baldíos: Recargo 50%</li>
+                        </ul>
+                    </div>
+                    <div class="tributo-card">
+                        <h3 class="tributo-clickable" onclick="openTributoModal('automotor')">Impuesto a los Automotores</h3>
+                        <p>Tributo anual sobre la propiedad de vehículos automotores.</p>
+                        <ul>
+                            <li>Según año y modelo</li>
+                            <li>Descuentos por antigüedad</li>
+                            <li>Pagos anticipados</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ver-mas-container">
+                    <button class="btn btn-secondary ver-mas-btn" onclick="openModal('provinciales')">
+                        <span>Ver Más Tributos Provinciales</span>
+                        <span class="arrow">📋</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tributos Municipales Tucumán -->
+        <section id="municipales" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Tributos Municipales - Provincia de Tucumán</h2>
+                <div class="municipios-container">
+                    <div class="municipio-selector">
+                        <label for="municipioSelect">Seleccionar Municipio:</label>
+                        <select id="municipioSelect" class="form-control" onchange="mostrarMunicipio()">
+                            <option value="">Seleccione un municipio</option>
+                            <option value="capital">San Miguel de Tucumán (Capital)</option>
+                            <option value="yerba-buena">Yerba Buena</option>
+                            <option value="tafi-viejo">Tafí Viejo</option>
+                            <option value="banda-rio-sali">Banda del Río Salí</option>
+                            <option value="concepcion">Concepción</option>
+                            <option value="lules">Lules</option>
+                        </select>
+                    </div>
+                    
+                    <div id="municipio-info" class="municipio-info">
+                        <p>Seleccione un municipio para ver la información tributaria específica</p>
+                    </div>
+
+                    <div class="ver-mas-container" id="ver-mas-municipales" style="display: none;">
+                        <button class="btn btn-secondary ver-mas-btn" onclick="openModal('municipales')">
+                            <span>Ver Más Tributos Municipales</span>
+                            <span class="arrow">📋</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner de Integrantes -->
+        <section id="equipo" class="team-banner">
+            <div class="container">
+                <h2 class="team-title">Nuestro Equipo</h2>
+                <p class="team-subtitle">Conoce a los estudiantes que desarrollaron este proyecto educativo</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="img/samira.jpg" alt="Samira Banegas" onerror="this.src='img/default-avatar.jpg'">
+                        </div>
+                        <h3 class="member-name">Samira Banegas</h3>
+                        <p class="member-quote">"Los tributos son el precio que pagamos por una sociedad civilizada y justa"</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="img/thiago.png" alt="Thiago Ibarra" onerror="this.src='img/default-avatar.jpg'">
+                        </div>
+                        <h3 class="member-name">Thiago Ibarra</h3>
+                        <p class="member-quote">"La educación tributaria es fundamental para construir ciudadanos responsables"</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="img/javier.png" alt="Javier Periotti" onerror="this.src='img/default-avatar.jpg'">
+                        </div>
+                        <h3 class="member-name">Javier Periotti</h3>
+                        <p class="member-quote">"Un sistema tributario eficiente es la base del desarrollo económico sostenible"</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="img/iris.jpg" alt="Iris Sosa" onerror="this.src='img/default-avatar.jpg'">
+                        </div>
+                        <h3 class="member-name">Iris Sosa</h3>
+                        <p class="member-quote">"La equidad tributaria garantiza justicia social y redistribución de la riqueza"</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="img/belen.jpg" alt="Belén Valdez" onerror="this.src='img/default-avatar.jpg'">
+                        </div>
+                        <h3 class="member-name">Belén Valdez</h3>
+                        <p class="member-quote">"El conocimiento tributario empodera a los ciudadanos en sus decisiones económicas"</p>
+                    </div>
+                </div>
+                
+                <div class="team-footer">
+                    <p>🎓 Estudiantes de Economía - Modalidad: Taller de Tributos - IES Lola Mora</p>
+                    <p>💪 Comprometidos con la educación y el conocimiento tributario</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h2 id="modal-title">Tributos Detallados</h2>
+                <button class="modal-close" onclick="closeModal()">✕</button>
+            </div>
+            <div class="modal-body" id="modal-content">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="closeModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">Normativa Vigente</a></li>
+                        <li><a href="#">DGR Tucumán</a></li>
+                        <li><a href="#">AFIP</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Útiles</h4>
+                    <ul>
+                        <li><a href="#">Normativa Vigente</a></li>
+                        <li><a href="#">DGR Tucumán</a></li>
+                        <li><a href="#">AFIP</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Integrantes</h4>
+                    <ul>
+                        <li>Valdez Quevedo, María Belén</li>
+                        <li>Periotti, Luis Javier</li>
+                        <li>Ibarra, Thiago Joel</li>
+                        <li>Banegas, Samira</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 - Profesorado de Economía 2° año - Fines Educativos</p>
+                <p>Proyecto de Estudio realizado con dedicación por alumnos del IES Lola Mora - San Miguel de Tucumán</p>
+                <p><strong>"El conocimiento es poder, y compartirlo es transformar el futuro."</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
